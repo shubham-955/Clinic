@@ -1,0 +1,60 @@
+.eachSlide>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    border-radius: 5px;
+}
+
+.sliderContainer {
+    position: relative;
+}
+
+.leftArrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 100px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 2px 14px 5px rgb(20 20 20 / 10%);
+}
+
+.rightArrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 40px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 2px 14px 5px rgb(20 20 20 / 10%);
+}
+
+.leftArrow:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.rightArrow:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.clinicCardSection {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

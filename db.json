@@ -1,0 +1,208 @@
+{
+  "slider": [
+    {
+      "id": 1,
+      "thumbnail": "https://media.istockphoto.com/photos/home-caregiver-helping-a-senior-man-standing-up-at-home-picture-id1313001485?b=1&k=20&m=1313001485&s=170667a&w=0&h=gf59mcgLFPf5_y2OVC_B2Drfgkq2nvG18IN-rgBDQ1s="
+    },
+    {
+      "id": 2,
+      "thumbnail": "https://media.istockphoto.com/photos/caregiver-assist-senior-woman-at-home-picture-id1296176562?b=1&k=20&m=1296176562&s=170667a&w=0&h=gHya2Ee_SnnfngzSvzRra93uSlb7xG76apicnILHvIw="
+    },
+    {
+      "id": 3,
+      "thumbnail": "https://media.istockphoto.com/photos/doctor-in-hospital-background-with-copy-space-picture-id914490884?k=20&m=914490884&s=612x612&w=0&h=MPSRpGNtZVj7Q6NS4HfOVj7VdrMAFWSfdT_ZlQdJeps="
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "title": "Dr. Abhishek Oza",
+      "location": "Pune",
+      "fees": 500,
+      "specialities": [
+        "Dentist",
+        "Ears"
+      ],
+      "status": 0,
+      "availability": [
+        "9.00 AM",
+        "0",
+        "9.40 AM",
+        "10.00 AM",
+        "10.20 AM",
+        "10.40",
+        "11.00 AM",
+        "11.20 AM",
+        "0",
+        "12.00 PM",
+        "12.20 PM",
+        "12.40 PM",
+        "1.00 PM",
+        "6.00 PM",
+        "6.20 PM",
+        "0",
+        "7.00 PM",
+        "7.20 PM",
+        "7.40 PM",
+        "8.00 PM",
+        "8.20 PM",
+        "8.40 PM",
+        "9.00 PM"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Dr. Mahesh Doke",
+      "location": "Chennai",
+      "fees": 600,
+      "specialities": [
+        "Dentist",
+        "Ears"
+      ],
+      "status": 1,
+      "availability": [
+        "9.00 AM",
+        "0",
+        "9.40 AM",
+        "10.00 AM",
+        "10.20 AM",
+        "10.40",
+        "11.00 AM",
+        "11.20 AM",
+        "0",
+        "12.00 PM",
+        "12.20 PM",
+        "12.40 PM",
+        "1.00 PM",
+        "6.00 PM",
+        "6.20 PM",
+        "0",
+        "7.00 PM",
+        "7.20 PM",
+        "7.40 PM",
+        "8.00 PM",
+        "8.20 PM",
+        "8.40 PM",
+        "9.00 PM"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Dr. Manoj Sarode",
+      "location": "Ahmednagar",
+      "fees": 650,
+      "specialities": [
+        "Dentist",
+        "Ears"
+      ],
+      "status": 0,
+      "availability": [
+        "9.00 AM",
+        "9.20 AM",
+        "9.40 AM",
+        "10.00 AM",
+        "10.20 AM",
+        "10.40",
+        "0",
+        "11.20 AM",
+        "0",
+        "12.00 PM",
+        "12.20 PM",
+        "12.40 PM",
+        "1.00 PM",
+        "6.00 PM",
+        "6.20 PM",
+        "6.40 PM",
+        "7.00 PM",
+        "7.20 PM",
+        "0",
+        "8.00 PM",
+        "8.20 PM",
+        "8.40 PM",
+        "9.00 PM"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Dr. Sahil Wakle",
+      "location": "Pune",
+      "fees": 450,
+      "specialities": [
+        "Dentist",
+        "Ears"
+      ],
+      "status": 0,
+      "availability": [
+        "9.00 AM",
+        "0",
+        "9.40 AM",
+        "10.00 AM",
+        "10.20 AM",
+        "10.40",
+        "11.00 AM",
+        "11.20 AM",
+        "0",
+        "12.00 PM",
+        "12.20 PM",
+        "12.40 PM",
+        "1.00 PM",
+        "6.00 PM",
+        "6.20 PM",
+        "0",
+        "7.00 PM",
+        "7.20 PM",
+        "7.40 PM",
+        "8.00 PM",
+        "8.20 PM",
+        "8.40 PM",
+        "9.00 PM"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Dr. Shubham Gadge",
+      "location": "Ahmednagar",
+      "fees": 680,
+      "specialities": [
+        "Dentist",
+        "Ears"
+      ],
+      "status": 0,
+      "availability": [
+        "9.00 AM",
+        "0",
+        "9.40 AM",
+        "10.00 AM",
+        "10.20 AM",
+        "10.40",
+        "11.00 AM",
+        "11.20 AM",
+        "0",
+        "12.00 PM",
+        "12.20 PM",
+        "12.40 PM",
+        "1.00 PM",
+        "6.00 PM",
+        "6.20 PM",
+        "0",
+        "7.00 PM",
+        "7.20 PM",
+        "7.40 PM",
+        "8.00 PM",
+        "8.20 PM",
+        "8.40 PM",
+        "9.00 PM"
+      ]
+    }
+  ],
+  "scheduled": [
+    {
+      "id": "f58fcee7-f39a-4ef1-80f8-0231063493f0",
+      "title": "Dr. Mahesh Doke",
+      "location": "Chennai",
+      "fees": 600,
+      "bookedDate": "14 04 2022",
+      "bookedTime": "11.00 AM"
+    }
+  ]
+}
