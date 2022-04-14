@@ -6,8 +6,8 @@ import { LocationOn } from '@material-ui/icons';
 export const IndClinicCard = ({ item }) => {
     const navigate = useNavigate();
     return (
-        <div className={styles.indClinicCard}>
-            <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x2.jpg.pagespeed.ic.JU08yIWWp6.webp" alt="" />
+        <div className={styles.indClinicCard} style={{ opacity: item.status ? 0.7 : 1 }}>
+            <img src="http://cdn.onlinewebfonts.com/svg/img_491427.png" alt="" />
             <div className={styles.clinicCardContent}>
                 <p className={styles.title}>{item.title}</p>
                 <div className={styles.location}>
@@ -19,9 +19,21 @@ export const IndClinicCard = ({ item }) => {
                     <p className={styles.span}>consulting fees</p>
                 </div>
             </div>
-            <div className={styles.bookBtn} onClick={() => navigate(`/${item.id}`)}>
-                <p>Book An Appointment</p>
-            </div>
+            {!item.status ?
+                <div className={styles.bookBtn} onClick={() => navigate(`/${item.id}`)}>
+                    <p>Book An Appointment</p>
+                </div>
+                :
+                <div className={styles.bookedBtn} onClick={() => navigate(`/scheduled`)}>
+                    <p>See Your Appointment</p>
+                </div>
+            }
+            {item.status &&
+                <div className={styles.bookedText}>
+                    <p>Appointment Booked</p>
+                </div>
+            }
         </div>
+
     )
 }

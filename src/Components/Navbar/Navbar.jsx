@@ -1,19 +1,20 @@
-import React, { useState } from 'react';
-import { Link } from "react-router-dom"
-import '../Navbar.css'
+import React from 'react';
+import { Link, useNavigate } from "react-router-dom"
+import styles from './Navbar.module.css'
+import { Work } from '@material-ui/icons';
 
 export const Navbar = () => {
 
-    const [visible, setVisible] = useState(false)
+    const navigate = useNavigate()
 
     return (
         <>
-            <nav className="navbar">
-                <div className={styles.mainTitle}>
-                    <Link className="navbar-brand" to="/">AROGYAM</Link>
+            <nav className={styles.navbar}>
+                <div>
+                    <Link className={styles.mainTitle} to="/">CLINIC</Link>
                 </div>
-                <div className={styles.cart}>
-
+                <div className={styles.cart} onClick={() => navigate("/scheduled")}>
+                    <Work style={{ color: '#0E2737', fontSize: 25 }} />
                 </div>
             </nav>
         </>

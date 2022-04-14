@@ -1,0 +1,64 @@
+.scheduledContainer {
+    width: 100%;
+}
+
+.scheduledTitle {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+}
+
+.scheduledTitle p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.scheduledSection {
+    margin-top: 30px;
+}
+
+.noAppoint {
+    background-color: white;
+    padding: 20px;
+}
+
+.scheduledCard {
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.location {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.fees {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.bookedDate {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.bookedTime {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.cancel {
+    color: red;
+}
+
+.cancel:hover {
+    cursor: pointer;
+}

@@ -46,7 +46,7 @@ export const Appointment = () => {
                 },
                 body: JSON.stringify({
                     ...booking,
-                    status: (booking.status) + 1,
+                    status: true,
                 }),
             })
                 .then((r) => {
@@ -65,7 +65,7 @@ export const Appointment = () => {
     const postBooking = () => {
         try {
             const data = {
-                "id": v4(),
+                "id": booking.id,
                 "title": booking.title,
                 "location": booking.location,
                 "fees": booking.fees,
@@ -136,8 +136,8 @@ export const Appointment = () => {
                     <div className={styles.modalView}>
                         <p className={styles.title}>{booking.title}</p>
                         <p className={styles.location}>City: {booking.location}</p>
-                        <p className={styles.fees}>Fees: {booking.fees}</p>
-                        <p className={styles.value}>Date: {moment(value.toString()).format("DD-MM-YYYY")}/-</p>
+                        <p className={styles.fees}>Fees: {booking.fees}/-</p>
+                        <p className={styles.value}>Date: {moment(value.toString()).format("DD-MM-YYYY")}</p>
                         <p className={styles.bookedTime}>Time: {bookedTime}</p>
                         <div className={styles.btn} onClick={() => navigate("/")}>
                             <p>Go to Home</p>

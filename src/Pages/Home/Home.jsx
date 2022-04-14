@@ -60,6 +60,7 @@ export const Home = () => {
                         return (
                             <div className={styles.eachSlide}>
                                 <div style={{ 'backgroundImage': `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${item.thumbnail})` }}>
+                                    <p className={styles.sliderTitle}>{item.title}</p>
                                 </div>
                             </div>
                         )
