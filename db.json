@@ -138,7 +138,7 @@
         "Dentist",
         "Ears"
       ],
-      "status": false,
+      "status": true,
       "availability": [
         "9.00 AM",
         "0",
@@ -204,5 +204,14 @@
       ]
     }
   ],
-  "scheduled": []
+  "scheduled": [
+    {
+      "id": 4,
+      "title": "Dr. Sahil Wakle",
+      "location": "Pune",
+      "fees": 450,
+      "bookedDate": "14-04-2022",
+      "bookedTime": "9.40 AM"
+    }
+  ]
 }
