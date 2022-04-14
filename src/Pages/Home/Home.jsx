@@ -32,7 +32,7 @@ export const Home = () => {
     }
 
     const getSlider = async () => {
-        fetch("http://localhost:3000/slider", {
+        fetch("https://clinic-fake-server.herokuapp.com/slider", {
             method: "GET",
             headers: {
                 "content-type": "application/json",
@@ -44,7 +44,7 @@ export const Home = () => {
     }
 
     const getBookings = async () => {
-        fetch("http://localhost:3000/bookings", {
+        fetch("https://clinic-fake-server.herokuapp.com/bookings", {
             method: "GET",
             headers: {
                 "content-type": "application/json",

@@ -26,7 +26,7 @@ export const Appointment = () => {
 
     const getIndData = async () => {
         try {
-            fetch(`http://localhost:3000/bookings/${params.id}`)
+            fetch(`https://clinic-fake-server.herokuapp.com/bookings/${params.id}`)
                 .then((res) => res.json())
                 .then((d) => {
                     setBooking(d)
@@ -41,7 +41,7 @@ export const Appointment = () => {
 
     const handleConfirm = () => {
         try {
-            fetch(`http://localhost:3000/bookings/${booking.id}`, {
+            fetch(`https://clinic-fake-server.herokuapp.com/bookings/${booking.id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',
@@ -74,7 +74,7 @@ export const Appointment = () => {
                 "bookedDate": moment(value.toString()).format("DD-MM-YYYY"),
                 "bookedTime": bookedTime
             }
-            fetch(`http://localhost:3000/scheduled`, {
+            fetch(`https://clinic-fake-server.herokuapp.com/scheduled`, {
                 method: "POST",
                 headers: {
                     'content-type': 'application/json'

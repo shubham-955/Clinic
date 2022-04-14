@@ -8,7 +8,7 @@ export const CartProvider = ({ children }) => {
 
     const getCount = () => {
         try {
-            fetch("http://localhost:3000/scheduled")
+            fetch("https://clinic-fake-server.herokuapp.com/scheduled")
                 .then((res) => res.json())
                 .then((data) => setCount(data.length))
                 .catch(console.log);

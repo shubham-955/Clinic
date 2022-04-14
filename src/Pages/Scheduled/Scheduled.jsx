@@ -11,7 +11,7 @@ export const Scheduled = () => {
     const { getCount } = useContext(CartContext);
 
     const getScheduled = async () => {
-        fetch("http://localhost:3000/scheduled", {
+        fetch("https://clinic-fake-server.herokuapp.com/scheduled", {
             method: "GET",
             headers: {
                 "content-type": "application/json",
@@ -30,7 +30,7 @@ export const Scheduled = () => {
         })
         setScheduled(newScheduled);
         try {
-            fetch(`http://localhost:3000/bookings/${item.id}`, {
+            fetch(`https://clinic-fake-server.herokuapp.com/bookings/${item.id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',
@@ -55,7 +55,7 @@ export const Scheduled = () => {
 
     const confirmDelete = (id) => {
         try {
-            fetch(`http://localhost:3000/scheduled/${id}`, {
+            fetch(`https://clinic-fake-server.herokuapp.com/scheduled/${id}`, {
                 method: "DELETE",
                 headers: {
                     "content-type": "application/json",
