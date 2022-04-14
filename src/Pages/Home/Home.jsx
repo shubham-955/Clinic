@@ -1,19 +1,22 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Slide } from 'react-slideshow-image';
 import { NavigateNext, NavigateBefore } from '@material-ui/icons';
 import 'react-slideshow-image/dist/styles.css';
 import styles from './Home.module.css'
 import { IndClinicCard } from '../../Components/IndClinicCard/IndClinicCard';
+import { CartContext } from '../../Contexts/CartProvider';
 
 
 export const Home = () => {
 
     const [slider, setSlider] = useState([])
     const [bookings, setBookings] = useState([])
+    const { getCount } = useContext(CartContext)
 
     useEffect(() => {
         getSlider();
         getBookings();
+        getCount();
     }, [])
 
     const properties = {

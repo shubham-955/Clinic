@@ -62,3 +62,14 @@
 .cancel:hover {
     cursor: pointer;
 }
+
+@media only screen and (max-width:767px) {
+    .scheduledCard {
+        flex-direction: column;
+    }
+
+    .cancel {
+        width: 100%;
+        text-align: end;
+    }
+}

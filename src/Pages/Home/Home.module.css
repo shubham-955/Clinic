@@ -64,3 +64,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+@media only screen and (max-width:540px) {
+    .scheduledCard {
+        flex-direction: column;
+    }
+
+    .clinicCardSection {
+        justify-content: center;
+    }
+}

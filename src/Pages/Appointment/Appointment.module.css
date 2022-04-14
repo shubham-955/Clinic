@@ -141,3 +141,37 @@
     font-size: 15px;
     margin-top: 5px;
 }
+
+@media only screen and (max-width:767px) {
+    .datePicker {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slotContainer {
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .datePicker {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slotContainer {
+        margin: 30px auto;
+        overflow-y: visible;
+        height: 100%;
+    }
+
+    .screenView {
+        padding: 0px 20px;
+    }
+
+    .modalView {
+        width: 100%;
+    }
+}

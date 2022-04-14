@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import styles from './Appointment.module.css';
 import 'react-calendar/dist/Calendar.css';
@@ -6,6 +6,7 @@ import Calendar from 'react-calendar';
 import { Modal } from '@material-ui/core';
 import moment from 'moment';
 import { v4 } from 'uuid';
+import { CartContext } from '../../Contexts/CartProvider';
 
 export const Appointment = () => {
 
@@ -13,6 +14,7 @@ export const Appointment = () => {
     const [bookedTime, setBookedTime] = useState("");
     const [value, onChange] = useState(new Date());
     const [open, setOpen] = useState(false);
+    const { getCount } = useContext(CartContext);
     const params = useParams();
     const navigate = useNavigate();
 
@@ -82,6 +84,7 @@ export const Appointment = () => {
                 .then((res) => res.json())
                 .then((d) => {
                     console.log(d);
+                    getCount()
                     setOpen(true)
                 })
                 .catch((err) => {

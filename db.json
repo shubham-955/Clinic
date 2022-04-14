@@ -89,7 +89,7 @@
         "9.00 PM"
       ],
       "bookedDate": "14-04-2022",
-      "bookedTime": "11.20 AM"
+      "bookedTime": "9.40 AM"
     },
     {
       "id": 3,
@@ -100,7 +100,7 @@
         "Dentist",
         "Ears"
       ],
-      "status": true,
+      "status": false,
       "availability": [
         "9.00 AM",
         "9.20 AM",
@@ -125,7 +125,9 @@
         "8.20 PM",
         "8.40 PM",
         "9.00 PM"
-      ]
+      ],
+      "bookedDate": "14-04-2022",
+      "bookedTime": "9.20 AM"
     },
     {
       "id": 4,
@@ -161,7 +163,9 @@
         "8.20 PM",
         "8.40 PM",
         "9.00 PM"
-      ]
+      ],
+      "bookedDate": "14-04-2022",
+      "bookedTime": "10.00 AM"
     },
     {
       "id": 5,
@@ -200,14 +204,5 @@
       ]
     }
   ],
-  "scheduled": [
-    {
-      "id": 3,
-      "title": "Dr. Manoj Sarode",
-      "location": "Ahmednagar",
-      "fees": 650,
-      "bookedDate": "14-04-2022",
-      "bookedTime": "11.20 AM"
-    }
-  ]
+  "scheduled": []
 }

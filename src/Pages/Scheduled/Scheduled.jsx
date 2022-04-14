@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
+import { CartContext } from '../../Contexts/CartProvider'
 import styles from "./Scheduled.module.css"
 export const Scheduled = () => {
 
@@ -7,6 +8,7 @@ export const Scheduled = () => {
     }, [])
 
     const [scheduled, setScheduled] = useState([])
+    const { getCount } = useContext(CartContext);
 
     const getScheduled = async () => {
         fetch("http://localhost:3000/scheduled", {
@@ -61,6 +63,7 @@ export const Scheduled = () => {
             }).then((r) => r.json()
             ).then((d) => {
                 console.log(d);
+                getCount()
             })
         } catch (error) {
             console.log(error)
