@@ -73,4 +73,17 @@
     .clinicCardSection {
         justify-content: center;
     }
+
+    .sliderTitle {
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:375px) {
+
+    .sliderTitle {
+        font-size: 20px;
+        text-align: center;
+    }
 }
